@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Karthik Reddy - Software Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    /* Navbar Styles */
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 15px;
+      z-index: 100;
+    }
+
+    #navbar nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    #navbar nav ul li {
+      margin: 0 20px;
+    }
+
+    #navbar nav ul li a {
+      color: white;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    #navbar nav ul li a:hover {
+      color: #f9f9f9;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 80px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #333;
+    }
+
+    h1 span {
+      color: #007BFF;
+    }
+
+    /* Home Section */
+    #home {
+      background: #007BFF;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .cta-btn {
+      background-color: #ff5e5e;
+      color: white;
+      padding: 12px 30px;
+      margin-top: 20px;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: #d74b4b;
+    }
+
+    /* About Section */
+    #about {
+      background: #fff;
+      text-align: center;
+    }
+
+    #about p {
+      margin-top: 20px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    /* Skills Section */
+    #skills {
+      background: #f4f4f4;
+    }
+
+    .skills-list {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    .skill h3 {
+      color: #007BFF;
+    }
+
+    .skill ul {
+      padding-left: 20px;
+    }
+
+    .skill ul li {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    /* Projects Section */
+    #projects {
+      background: white;
+    }
+
+    .project-cards {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .project-card {
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 30%;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .project-card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .project-card h3 {
+      color: #333;
+      margin-top: 10px;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Contact Section */
+    #contact {
+      background: #007BFF;
+      color: white;
+      text-align: center;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 768px) {
+      .skills-list {
+        flex-direction: column;
+      }
+
+      .project-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .project-card {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header id="navbar">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="intro">
+      <h1>Hello, I'm <span>J Karthik Reddy</span></h1>
+      <p>Software Engineer | 5+ years of Experience</p>
+      <a href="#contact" class="cta-btn">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a passionate software engineer with over 5 years of experience. My expertise includes developing scalable applications, solving complex problems, and delivering innovative solutions. I enjoy working with the latest technologies and continuously improving my skills.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill">
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Vue.js</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Python</li>
+            <li>Java</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3>Databases</h3>
+          <ul>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project-cards">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300" alt="Project Image">
+          <h3>Project One</h3>
+          <p>A brief description of the project. Technologies used: React, Node.js</p>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300" alt="Project Image">
+          <h3>Project Two</h3>
+          <p>A brief description of the project. Technologies used: Python, Django</p>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300" alt="Project Image">
+          <h3>Project Three</h3>
+          <p>A brief description of the project. Technologies used: Java, Spring Boot</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>If you'd like to work with me or just say hello, feel free to reach out!</p>
+      <a href="mailto:jkarthik@example.com" class="cta-btn">Email Me</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 J Karthik Reddy. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Simple smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
