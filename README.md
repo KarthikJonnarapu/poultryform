@@ -28,3 +28,11 @@ git push --set-upstream origin branch-name - setting the upstream is so importan
 # Add files and commit
 git add file-name - this will add only the required files to commit
 git add . - this will all the newly created or modified files to your commit history
+
+# Shows commit history
+git log - this shows the detailed view of the commit history
+git lon --oneline - this shows the full commit history at one short very clearly
+
+# Shows difference between 2 commits
+git diff - this shows the differ
+git diff commit-id1 commit-id2 - this will show the code difference from both the commit ids
