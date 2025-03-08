@@ -23,3 +23,8 @@ git branch -m old-branch-name new-branch-name - this is used to rename when we a
 git push origin -m new-branch-name
 git push --set-upstream origin branch-name - setting the upstream is so important that to ensure that your local changes are being properly linked to the corresponding remote branch
                                            - and this also makes the operations like git push and git pull work without needing to sepecify the remote branch each time.
+
+                                        
+# Commands to add and push the files
+git add file-name - this will add only the required files to commit
+git add . - this will all the newly created or modified files to your commit history
