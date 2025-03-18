@@ -36,4 +36,3 @@ git log --oneline - this shows the full commit history at one short very clearly
 # Shows difference between 2 commits
 git diff - this shows the differ
 git diff commit-id1 commit-id2 - this will show the code difference from both the commit ids
-
